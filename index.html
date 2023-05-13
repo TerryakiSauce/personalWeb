@@ -5,23 +5,32 @@
     <title>My Personal Website</title>
     <style>
       body {
+        background: #f5f5f5;
         font-family: Arial, sans-serif;
         text-align: center;
       }
+
+      nav li a:hover {
+        color: #007bff;
+      }
+
       header {
         background-color: lightgray;
         padding: 20px;
       }
+
       nav ul {
         display: inline-block;
         list-style: none;
         margin: 0;
         padding: 0;
       }
+
       nav li {
         display: inline-block;
         margin-right: 10px;
       }
+
       main {
         display: flex;
         flex-wrap: wrap;
@@ -29,22 +38,33 @@
         align-items: center;
         height: 500px;
       }
+
       section {
         width: 30%;
         margin: 20px;
       }
-      h2 {
+
+      section h2 {
         font-size: 24px;
         margin-bottom: 10px;
+        border-bottom: 2px solid #007bff;
       }
+
+      section#projects li:not(:last-child) {
+        margin-bottom: 10px;
+      }
+
       p {
         font-size: 18px;
         text-align: left;
       }
+
       footer {
         background-color: lightgray;
         padding: 10px;
         font-size: 14px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
       }
     </style>
   </head>
